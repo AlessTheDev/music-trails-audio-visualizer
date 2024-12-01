@@ -7,10 +7,10 @@ public class ThresholdLine : MonoBehaviour
 {
     [SerializeField] private float multiplier = 0.1f;
 
-    public float value;
+    [SerializeField] private BeatDetection beatDetectionAlgorithm; 
     
     private void Update()
     {
-        transform.localPosition = new Vector2(transform.localPosition.x, value * multiplier);
+        transform.localPosition = new Vector2(transform.localPosition.x, beatDetectionAlgorithm.Threshold * multiplier);
     }
 }

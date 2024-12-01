@@ -451,8 +451,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 68687535}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.2042181, y: 0, z: -0.04221003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -686,9 +686,6 @@ MonoBehaviour:
   minBeatTimeDistance: 1.5
   analyzeGlobal: 0
   frequencyBand: 7
-  spectralFlux: {fileID: 0}
-  smoothedSpectralFlux: {fileID: 0}
-  threshold: {fileID: 0}
   OnBeat:
     m_PersistentCalls:
       m_Calls:
@@ -741,9 +738,6 @@ MonoBehaviour:
   minBeatTimeDistance: 3
   analyzeGlobal: 0
   frequencyBand: 8
-  spectralFlux: {fileID: 0}
-  smoothedSpectralFlux: {fileID: 0}
-  threshold: {fileID: 0}
   OnBeat:
     m_PersistentCalls:
       m_Calls:
@@ -4598,9 +4592,6 @@ MonoBehaviour:
   minBeatTimeDistance: 0.08
   analyzeGlobal: 0
   frequencyBand: 1
-  spectralFlux: {fileID: 0}
-  smoothedSpectralFlux: {fileID: 0}
-  threshold: {fileID: 0}
   OnBeat:
     m_PersistentCalls:
       m_Calls: []
@@ -5874,6 +5865,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1050893336}
   - component: {fileID: 1050893335}
+  - component: {fileID: 1050893338}
   - component: {fileID: 1050893337}
   m_Layer: 0
   m_Name: 'SmoothedSpectralFluxLine '
@@ -6017,6 +6009,20 @@ MonoBehaviour:
   lerpSpeed: 1000
   multiplier: 0.001
   data: []
+--- !u!114 &1050893338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050893334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce0cf9f393c23204c8ddd3e2e6ae7368, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beatDetectionAlgorithm: {fileID: 2057359869}
+  fieldToGrab: 1
 --- !u!1001 &1099323936
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6270,7 +6276,7 @@ Transform:
   m_GameObject: {fileID: 1165244944}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.2042181, y: -0.24750744, z: -0.04221003}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6442,6 +6448,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1201267121}
   - component: {fileID: 1201267120}
+  - component: {fileID: 1201267123}
   - component: {fileID: 1201267122}
   m_Layer: 0
   m_Name: SpectralFluxLine
@@ -6563,7 +6570,7 @@ Transform:
   m_GameObject: {fileID: 1201267119}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.9742184, y: 0.24750744, z: 0.04221003}
+  m_LocalPosition: {x: -6.9742184, y: 0, z: 0.04221003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6585,6 +6592,20 @@ MonoBehaviour:
   lerpSpeed: 1000
   multiplier: 0.001
   data: []
+--- !u!114 &1201267123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201267119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce0cf9f393c23204c8ddd3e2e6ae7368, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beatDetectionAlgorithm: {fileID: 2057359869}
+  fieldToGrab: 0
 --- !u!1 &1204051112
 GameObject:
   m_ObjectHideFlags: 0
@@ -7277,9 +7298,6 @@ MonoBehaviour:
   minBeatTimeDistance: 0.6
   analyzeGlobal: 1
   frequencyBand: 0
-  spectralFlux: {fileID: 0}
-  smoothedSpectralFlux: {fileID: 0}
-  threshold: {fileID: 0}
   OnBeat:
     m_PersistentCalls:
       m_Calls:
@@ -7883,9 +7901,6 @@ MonoBehaviour:
   minBeatTimeDistance: 0.25
   analyzeGlobal: 0
   frequencyBand: 8
-  spectralFlux: {fileID: 0}
-  smoothedSpectralFlux: {fileID: 0}
-  threshold: {fileID: 0}
   OnBeat:
     m_PersistentCalls:
       m_Calls:
@@ -8303,7 +8318,7 @@ Transform:
   m_GameObject: {fileID: 1844693668}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.2042181, y: 0.24750744, z: 0.04221003}
+  m_LocalPosition: {x: -3.2042181, y: 0, z: 0.04221003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8427,7 +8442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multiplier: 0.001
-  value: 980.804
+  beatDetectionAlgorithm: {fileID: 2057359869}
 --- !u!1 &1862291724
 GameObject:
   m_ObjectHideFlags: 0
