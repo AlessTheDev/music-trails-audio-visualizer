@@ -3320,10 +3320,6 @@ PrefabInstance:
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 6329709308301264890, guid: 6808cdd1d57130243a671bd471777893, type: 3}
-      propertyPath: clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 32bb6013993a1634ea48586265f8d586, type: 3}
-    - target: {fileID: 6329709308301264890, guid: 6808cdd1d57130243a671bd471777893, type: 3}
       propertyPath: _earlyAudioSpectrum
       value: 
       objectReference: {fileID: 1499977889}

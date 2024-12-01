@@ -47,7 +47,7 @@ MonoBehaviour:
   audioSpectrum: {fileID: 7333353193104835038}
   spectralWindowSize: 200
   smoothingKernelSize: 4
-  thresholdMultiplier: 9.2
+  thresholdMultiplier: 3.75
   minStandardDeviation: 0
   minBeatTimeDistance: 0.08
   analyzeGlobal: 0
@@ -162,7 +162,7 @@ MonoBehaviour:
   audioSpectrum: {fileID: 7333353193104835038}
   spectralWindowSize: 200
   smoothingKernelSize: 4
-  thresholdMultiplier: 9.2
+  thresholdMultiplier: 3.75
   minStandardDeviation: 0
   minBeatTimeDistance: 0.08
   analyzeGlobal: 0
@@ -232,7 +232,7 @@ MonoBehaviour:
   audioSpectrum: {fileID: 7333353193104835038}
   spectralWindowSize: 200
   smoothingKernelSize: 4
-  thresholdMultiplier: 9.2
+  thresholdMultiplier: 3.75
   minStandardDeviation: 0
   minBeatTimeDistance: 0.08
   analyzeGlobal: 0
@@ -303,8 +303,8 @@ MonoBehaviour:
   audioSpectrum: {fileID: 7333353193104835038}
   spectralWindowSize: 200
   smoothingKernelSize: 4
-  thresholdMultiplier: 4.5
-  minStandardDeviation: 4
+  thresholdMultiplier: 3.75
+  minStandardDeviation: 8
   minBeatTimeDistance: 0.08
   analyzeGlobal: 1
   frequencyBand: 0
@@ -424,7 +424,7 @@ MonoBehaviour:
   audioSpectrum: {fileID: 7333353193104835038}
   spectralWindowSize: 200
   smoothingKernelSize: 4
-  thresholdMultiplier: 9.2
+  thresholdMultiplier: 3.75
   minStandardDeviation: 0
   minBeatTimeDistance: 0.08
   analyzeGlobal: 0
@@ -527,11 +527,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSpectrum: {fileID: 7333353193104835038}
-  spectralWindowSize: 200
+  spectralWindowSize: 100
   smoothingKernelSize: 4
-  thresholdMultiplier: 9.2
+  thresholdMultiplier: 3
   minStandardDeviation: 0
-  minBeatTimeDistance: 0.08
+  minBeatTimeDistance: 0.2
   analyzeGlobal: 0
   frequencyBand: 7
   spectralFlux: {fileID: 0}

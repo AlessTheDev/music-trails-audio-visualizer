@@ -44,8 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77211ff843c583b48a2fb6e767221d13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: bfffa138d500f5544b18055fa0bc595a, type: 3}
+  loadingScreen: {fileID: 0}
+  clip: {fileID: 8300000, guid: f91fa7cc7cb7d0849b78182125035ca3, type: 3}
   _valuesMultiplier: 100
   _earlyAudioSpectrum: {fileID: 0}
   _realtimeAudioSpectrum: {fileID: 0}
+  _realtimeAudioOutput: {fileID: 0}
   _delay: 2
