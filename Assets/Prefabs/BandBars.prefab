@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6591775236443137536
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4494502007593802778}
+  - component: {fileID: 7987362425899348563}
+  m_Layer: 0
+  m_Name: BandBars
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4494502007593802778
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6591775236443137536}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7987362425899348563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6591775236443137536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2215379d0f565d143bef14f1ea658a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSpectrum: {fileID: 0}
+  barPrefab: {fileID: 3645555380099949441, guid: a4e68ce68afe5454cae4e3d4d94e91e7, type: 3}
+  legend: {fileID: 0}
+  gap: 1
+  scaleSpeed: 20
+  useBuffers: 1
+  bufferDecrease: 1.25
+  frequencyBands:
+  - name: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    barTransform: {fileID: 0}
+    isAverage: 1
+    valueBuffer: 0
+    bufferDecrease: 0
+  - name: 1
+    color:
+      serializedVersion: 2
+      rgba: 4285946942
+    barTransform: {fileID: 0}
+    isAverage: 0
+    valueBuffer: 0
+    bufferDecrease: 0
+  - name: 2
+    color:
+      serializedVersion: 2
+      rgba: 4289432692
+    barTransform: {fileID: 0}
+    isAverage: 0
+    valueBuffer: 0
+    bufferDecrease: 0
+  - name: 4
+    color:
+      serializedVersion: 2
+      rgba: 4294934317
+    barTransform: {fileID: 0}
+    isAverage: 0
+    valueBuffer: 0
+    bufferDecrease: 0
+  - name: 5
+    color:
+      serializedVersion: 2
+      rgba: 4292391936
+    barTransform: {fileID: 0}
+    isAverage: 0
+    valueBuffer: 0
+    bufferDecrease: 0
+  - name: 7
+    color:
+      serializedVersion: 2
+      rgba: 4287702936
+    barTransform: {fileID: 0}
+    isAverage: 0
+    valueBuffer: 0
+    bufferDecrease: 0
+  - name: 8
+    color:
+      serializedVersion: 2
+      rgba: 4294901897
+    barTransform: {fileID: 0}
+    isAverage: 0
+    valueBuffer: 0
+    bufferDecrease: 0
