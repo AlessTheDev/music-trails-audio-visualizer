@@ -50,7 +50,7 @@ Welcome to the repository about **Music Trails**, a project on how we can use re
 - Go to the releases tab.  
 - Download the `.zip` file and extract it.  
 - Run the executable!
-- I also provided 2 sample songs you can try  
+- I also provided 2 sample songs you can try made by [SO_Snake](https://www.youtube.com/@SO_Snake)
 
 ### Option 2: Open the Unity Project  
 - Clone the repository or download it as a `.zip`.  
