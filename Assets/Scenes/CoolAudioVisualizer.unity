@@ -953,7 +953,7 @@ PrefabInstance:
     - target: {fileID: 6329709308301264890, guid: 6808cdd1d57130243a671bd471777893, type: 3}
       propertyPath: clip
       value: 
-      objectReference: {fileID: 8300000, guid: f91fa7cc7cb7d0849b78182125035ca3, type: 3}
+      objectReference: {fileID: 8300000, guid: ffb8cf1e06e81ce4ca8bbb1ba4e92c7f, type: 3}
     - target: {fileID: 6329709308301264890, guid: 6808cdd1d57130243a671bd471777893, type: 3}
       propertyPath: loadingScreen
       value: 
