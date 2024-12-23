@@ -12,7 +12,7 @@ Welcome to the repository about **Music Trails**, a project on how we can use re
    - **Audio Graph Scene**: A visual representation of audio analysis techniques, great for understanding the underlying algorithms.  
 
 2. **Release Build**  
-   - For users who don’t have Unity, download the pre-built executable from the release tab at your right
+   - For users who don’t have Unity, download the pre-built executable from [here](https://cupflow-studios.itch.io/audio-visualizer)
 
 3. **Research Documentation**  
    - I've explained all the process and research [here](https://deeply-dodo-5c9.notion.site/Music-Trails-Research-60fd7dc2b13c4d809a78fc6d103b411a?pvs=4)
@@ -47,7 +47,7 @@ Welcome to the repository about **Music Trails**, a project on how we can use re
 ## How to Use  
 
 ### Option 1: Use the executable  
-- Go to the releases tab.  
+- [Visit this link](https://cupflow-studios.itch.io/audio-visualizer).  
 - Download the `.zip` file and extract it.  
 - Run the executable!
 - I also provided 2 sample songs you can try made by [SO_Snake](https://www.youtube.com/@SO_Snake)
