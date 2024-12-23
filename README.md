@@ -50,7 +50,7 @@ Welcome to the repository about **Music Trails**, a project on how we can use re
 - [Visit this link](https://cupflow-studios.itch.io/audio-visualizer).  
 - Download the `.zip` file and extract it.  
 - Run the executable!
-- I also provided 2 sample songs you can try made by [SO_Snake](https://www.youtube.com/@SO_Snake)
+- I also provided 2 sample songs you can try made by [SO_Snake]([https://www.youtube.com/@SO_Snake](https://m.youtube.com/@S.O-Music))
 
 ### Option 2: Open the Unity Project  
 - Clone the repository or download it as a `.zip`.  
