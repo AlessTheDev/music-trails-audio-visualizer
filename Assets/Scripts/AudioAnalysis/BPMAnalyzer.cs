@@ -1,8 +1,9 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class BPMAnalyzer : MonoBehaviour
 {
-    [SerializeField] private BeatDetection beatDetectionAlgorythm;
+    [FormerlySerializedAs("beatDetectionAlgorythm")] [SerializeField] private BeatDetection beatDetectionAlgorithm;
     [SerializeField] private float interval;
 
     public int BPMs { get; private set; }   
@@ -13,7 +14,7 @@ public class BPMAnalyzer : MonoBehaviour
 
     private void Start()
     {
-        beatDetectionAlgorythm.OnBeat.AddListener(AddBeatToCount);
+        beatDetectionAlgorithm.OnBeat.AddListener(AddBeatToCount);
     }
 
     private void Update()

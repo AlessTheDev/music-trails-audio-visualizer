@@ -28,10 +28,6 @@ public class BeatDetection : MonoBehaviour
 
     [SerializeField] private FrequencyBandName frequencyBand;
 
-    [Header("TMP")] [SerializeField] private LineArrayRenderer spectralFlux;
-    [SerializeField] private LineArrayRenderer smoothedSpectralFlux;
-    [SerializeField] private ThresholdLine threshold;
-
     private float[] previousSpectrum;
     private float[] currentSpectrum;
 
@@ -40,8 +36,11 @@ public class BeatDetection : MonoBehaviour
 
     public UnityEvent OnBeat;
     private float lastBeatTime;
-    // Debug 
-    private float stdDev;
+    
+    // Info Fields
+    public float[] SpectralFluxData { get; private set; }
+    public float[] SmoothSpectralFluxData { get; private set; }
+    public float Threshold { get; private set; }
 
     private void FixedUpdate()
     {
@@ -117,11 +116,7 @@ public class BeatDetection : MonoBehaviour
         {
             spectralFluxValues[i] = spectralFluxList[i].value;
         }
-
-        if (spectralFlux)
-        {
-            spectralFlux.data = spectralFluxValues;
-        }
+        
 
         float kernelValues = 1 / smoothingKernelSize;
         float[] kernel = new float[smoothingKernelSize];
@@ -131,25 +126,20 @@ public class BeatDetection : MonoBehaviour
         }
 
         float[] smoothedSpectralFlux = Convolve(spectralFluxValues, smoothingKernelSize);
-
-        if (this.smoothedSpectralFlux)
-        {
-            this.smoothedSpectralFlux.data = smoothedSpectralFlux;
-        }
-
+        
         float mean = CalculateAverage(smoothedSpectralFlux);
         float standardDeviation = CalculateStandardDeviation(smoothedSpectralFlux, mean);
 
-        stdDev = standardDeviation;
         float threshold = CalculateThreshold(mean, standardDeviation);
-        if (this.threshold)
-        {
-            this.threshold.value = threshold;
-        }
+        
+        // Update info fields
+        SpectralFluxData = spectralFluxValues; 
+        SmoothSpectralFluxData = smoothedSpectralFlux; 
+        Threshold = threshold;
 
         return sf.value > threshold && standardDeviation > minStandardDeviation;
     }
-
+    
     /// <summary>
     /// Calculates the threshold using the Standard Deviation
     /// </summary>

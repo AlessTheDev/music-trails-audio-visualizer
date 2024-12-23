@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class LineArrayRenderer : MonoBehaviour
@@ -10,7 +11,7 @@ public class LineArrayRenderer : MonoBehaviour
     [SerializeField] private float lerpSpeed = 10;
     [SerializeField] private float multiplier = 0.1f;
 
-    public float[] data;
+    public float[] data = new float[]{};
 
     private void Start()
     {
