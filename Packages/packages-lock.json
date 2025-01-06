@@ -1,11 +1,5 @@
 {
   "dependencies": {
-    "com.alesscatdev.fileexplorer": {
-      "version": "file:C:/Users/aless/Downloads/FileExplorerPackage",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {}
-    },
     "com.unity.2d.animation": {
       "version": "9.0.3",
       "depth": 1,

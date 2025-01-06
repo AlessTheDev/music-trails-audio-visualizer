@@ -1,0 +1,20 @@
+{
+  "name": "com.alesscatdev.fileexplorer",
+  "version": "1.2.3",
+  "displayName": "Built In File Explorer",
+  "description": "This is an unity built in file explorer I made for my game, it has basic features like changing path, select files, shortcuts and filters",
+  "unity": "2021.3",
+  "unityRelease": "0b5",
+  "documentationUrl": "https://github.com/AlessTheDev/Unity-Built-in-File-Explorer/blob/main/README.md",
+  "changelogUrl": "",
+  "licensesUrl": "",
+  "keywords": [
+    "File Manager",
+    "Files",
+    "Manager"
+  ],
+  "author": {
+    "name": "Aless",
+    "url": "https://github.com/AlessTheDev"
+  }
+}
